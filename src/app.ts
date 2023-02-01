@@ -22,7 +22,7 @@ export class Application {
   public startServer(): void {
     const host: string = this._server.get('host');
     const port: number = this._server.get('port');
-    this._server.listen(port, host, () => {
+    this._server.listen(port, () => {
       console.log(`Server started at http://${host}:${port}`);
     });
   }
